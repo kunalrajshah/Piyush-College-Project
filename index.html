@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="style.css" />
+  <title>Contact Form</title>
+</head>
+<body>
+  <div class="form-container">
+    <h2>Contact Us</h2>
+    <form onsubmit="alertfun(); return false;">
+      <label for="first-name">First Name</label>
+      <input type="text" id="first-name" name="first-name" required>
+
+      <label for="last-name">Last Name</label>
+      <input type="text" id="last-name" name="last-name" required>
+
+      <label for="phone">Phone Number</label>
+      <input type="tel" id="phone" name="phone" required>
+
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="hall">Hall of Residence</label>
+      <input type="text" id="hall" name="hall" required>
+
+      <label for="query">Any Query</label>
+      <textarea id="query" name="query" rows="4" required></textarea>
+
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+</body>
+<script>
+  function alertfun() {
+    alert("Your Details Is Submitted !!");
+    document.getElementById("first-name").value = "";
+    document.getElementById("last-name").value = "";
+    document.getElementById("phone").value = "";
+    document.getElementById("email").value = "";
+    document.getElementById("hall").value = "";
+    document.getElementById("query").value = "";
+  }
+</script>
+</html>
