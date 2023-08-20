@@ -1,11 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" type="text/css" href="style.css" />
   <title>Contact Form</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background:url("https://images.static-collegedunia.com/public/college_data/images/appImage/25948_IITK_New.jpg") center/cover no-repeat;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      position: relative;
+    }
+
+
+    .form-container {
+      background-color: rgba(252, 251, 255, 0.8);
+      padding: 20px;
+      border-radius: 10px;
+      width: 70%;
+      max-width: 400px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+      position: relative;
+      z-index: 1;
+    }
+
+    .form-container h2 {
+      text-align: center;
+      color: rgb(241, 43, 43);
+      border-bottom: 1px solid pink;
+    }
+
+    .form-container form {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .form-container label,
+    .form-container input,
+    .form-container textarea {
+      margin-bottom: 10px;
+      font-weight: bold;
+    }
+
+    .form-container input,
+    .form-container textarea {
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    .form-container textarea {
+      resize: vertical;
+    }
+
+    .form-container button {
+      background-color: #007bff;
+      color: #fff;
+      border: none;
+      padding: 10px;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    .form-container button:hover {
+      background-color: #0056b3;
+    }
+
+    .form-container input {
+      width: 95%;
+      padding: 0.5rem;
+      border: 1px solid rgb(124, 124, 213);
+      border-radius: 0.25rem;
+      margin-bottom: 1rem;
+      transition: border-color 0.3s;
+    }
+
+    .form-container input:focus {
+      outline: none;
+      border-color: rgba(66, 66, 233, 0.5);
+      box-shadow: 0 0 0 3px rgba(0, 0, 255, 0.1);
+    }
+  </style>
 </head>
+
 <body>
   <div class="form-container">
     <h2>Contact Us</h2>
@@ -43,4 +127,5 @@
     document.getElementById("query").value = "";
   }
 </script>
+
 </html>
